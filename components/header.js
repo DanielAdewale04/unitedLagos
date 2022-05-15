@@ -19,7 +19,11 @@ const Header = ({scrollToElement, custom}) => {
                         </a>
                     </div>
                     <div className='flex header-btns'>
-                        <button style={{color: custom}}>Our vision</button>
+                        <a>
+                            <Link href='/vision'>
+                                <button style={{color: custom}}>Our vision</button>
+                            </Link>
+                        </a>
                         <button style={{color: custom}} onClick={() => scrollToElement()}>Contact Us</button>
                     </div>
                     
