@@ -1,0 +1,63 @@
+@media (max-width:1028px){
+    #__next{
+        width:100%;
+    }
+    .header-btns{
+        width:80%;
+        justify-content: flex-end;
+    }
+    .header-btns button{
+        margin: 0 0 0 3%;
+        padding:0;
+    }
+    .header-main button{
+        padding:0;
+    }
+    .main-breadcrumb{
+        width:100%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .header-main .flex{
+        flex-direction:row;
+    }
+    .info-section > h1 {
+        font-size:2rem;
+        width:95%;
+    }
+    .about-card img {
+        width:100%;
+    }
+    .vision-widget{
+        width:90%;
+    }
+    .vision-widget > div {
+        width:100%;
+    }
+    .vision-widget h1 {
+        font-size:2rem;
+    }
+    .about-widget {
+        padding:4rem 10%;
+    }
+    .about-card{
+        margin:5rem 0;
+    }
+    .about-card > div {
+        width:100%;
+        text-align:center;
+    }
+    .quote-widget > div {
+        width:100%;
+    }
+    .contact-widget > div {
+        width:100%;
+    }
+    .short-input{
+        width:100%;
+    }
+    .right-widget{
+        width:90%;
+    }
+}

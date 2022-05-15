@@ -1,0 +1,242 @@
+/* Theme */
+:root{
+    --main-color: #FADE70;
+}
+
+@font-face {
+    font-family: Bold;
+    src: url('./public/fonts/Gilroy-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: Light;
+    src: url('./public/fonts/Gilroy-Light.otf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+P {
+    font-family:Light;
+}
+h1 h2 h3{
+    font-family:Bold
+}
+body {
+    background: #FFFAE7;
+    padding:0;
+    margin:0;
+}
+
+/* Necessaries */
+.flex{
+    display:flex;
+}
+.apart{
+    justify-content: space-between;
+}
+.centralized{
+    justify-content: center;
+    align-items:Center;
+}
+.centralized-v{
+    align-items:Center;
+}
+button{
+    background:black;
+    color:#ffffff;
+    padding:1rem 10%;
+    border:none;
+    border-radius:10px;
+    font-weight:500;
+    font-family: Bold;
+    cursor:pointer;
+}
+
+/* Header Section */
+.header-btns{
+    width:30%;
+    justify-content: flex-end;
+}
+.header-btns button {
+    margin:0 0 0 5%;
+}
+.main-breadcrumb{
+    position: relative;
+    height:42rem;
+}
+.main-breadcrumb::before{
+    content: '';
+    background:url('./public/app/main.svg');
+    background-size:cover;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:42rem;
+    filter:brightness(0.5);
+    z-index:-1;
+}
+.main_breadcrumb::after{
+    background: linear-gradient(0.63deg, rgba(0, 0, 0, 0.52) 55.75%, rgba(0, 0, 0, 0) 99.44%);
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0.5;
+    width:100%;
+    height:100%;
+}
+.header-main{
+    position:relative;
+    padding:1% 5%;
+}
+.header-main button{
+    background: transparent;
+    color:#ffffff;
+    padding:0;
+}
+.logo{
+    width:5rem;
+}
+.info-section{
+    margin:0rem 0;
+    width:90%;
+    color:#ffffff;
+    display:flex;
+    position:absolute;
+    left:0%;
+    bottom:10%;
+    flex-direction:column;
+    align-items: center;
+}
+.info-section > h1 {
+    font-size:4.5rem;
+    width:90%;
+    box-sizing: border-box;
+    padding:0%;
+    margin:0; 
+}
+
+/* Vision Widget */
+.vision-widget{
+    width:80%;
+    padding:5% 0;
+    margin:0 auto;
+}
+.vision-widget > div {
+    width:45%;
+}
+.vision-widget > div p {
+    line-height:1.7rem;
+    white-space:pre-line;
+}
+.vision-widget h1 {
+    font-size:2.5rem;
+}
+
+/* About Widget */
+.about-widget {
+    padding:2% 10%;
+    width:100%;
+    background:#1e1e1e;
+    color:#ffffff;
+    position: relative;
+}
+.about-widget > img {
+    width:4rem;
+    height:4rem;
+    position:absolute;
+    top:-2rem;
+    left:50%;
+    transform: left(-50%);
+}
+.about-card{
+    margin:2rem 0;
+}
+.about-card img {
+    width:28rem;
+    object-fit: contain;
+}
+.about-card p {
+    line-height:1.5rem;
+}
+.about-card > div {
+    width:50%;
+}
+.about-card button {
+    background:#d9d9d9;
+    color:#000000;
+}
+.reversed{
+    flex-direction:row-reverse;
+}
+
+/* Quote Widget */
+.quote-widget{
+    width:80%;
+    margin:0 auto;
+    padding:3rem 0;
+}
+.quote-widget > div {
+    width:50%;
+}
+.quote-widget h1 {
+    font-size:2.1rem;
+    font-weight:500;
+    line-height:3rem;
+}
+.quote-widget p {
+    font-size:1.3rem;
+}
+
+/* Contact Widget */
+.contact-widget{
+    padding:10% 10%;
+    width:100%;
+}
+.contact-widget > div {
+    width:47%;
+}
+.contact-widget > div > div {
+    margin:1rem 0;
+}
+.contact-widget > div input {
+    padding:1rem 2%;
+    background: rgba(217, 217, 217, 0.2);
+    border:none;
+    font-family: Light;
+    margin:0.5rem 2% 0 0;
+}
+.contact-widget > div textarea {
+    padding:0.5rem 2%;
+    background: rgba(217, 217, 217, 0.2);
+    border:none;
+    height:8rem;
+    resize:none;
+    font-family: Light;
+    margin:1rem 2% 0 0;
+}
+.short-input{
+    width:46%;
+}
+.long-input{
+    width:100%;
+}
+.inputs-flex{
+    flex-wrap:wrap;
+}
+
+/* Footer Widget */
+.footer-widget{
+    padding:2% 10%;
+    width:100%;
+    background:#1d1d1d;
+    color:#ffffff;
+}
+.right-widget{
+    width:30%;
+}
+.right-widget p {
+    text-decoration: underline;
+}
