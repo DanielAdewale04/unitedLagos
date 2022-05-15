@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 const Footer = () => {
     return(
@@ -15,7 +16,13 @@ const Footer = () => {
                 <div className='flex right-widget apart'>
                     <div>
                         <h4>About</h4>
-                        <p>Our vision</p>
+                        <p>
+                            <a>
+                                <Link href='/vision'>
+                                    Our vision
+                                </Link>
+                            </a>
+                        </p>
                         <p>Donate</p>
                     </div>
                     <div>
